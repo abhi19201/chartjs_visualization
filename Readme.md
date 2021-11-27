@@ -1,0 +1,68 @@
+# Greendeck : Time Series Visualisation
+
+![Mongo](https://img.shields.io/badge/DB-MongoDB-yellow)
+![React](https://aleen42.github.io/badges/src/react.svg)
+![npm](https://aleen42.github.io/badges/src/npm.svg)
+![vsCode](https://aleen42.github.io/badges/src/visual_studio_code.svg)
+![node](https://aleen42.github.io/badges/src/node.svg)
+
+
+Website Link : [Greendeck: Time Series Visualisation](https://greendeck-cliffai.herokuapp.com/)
+
+
+## Environmental Variables
+
+We already required and configured dotenv.
+
+```javascript
+require("dotenv").config();
+```
+
+Create a `.env` file in the root directory of the project. Add
+environment-specific variables on new lines in the form of `KEY=VALUE`.
+We need these environment variables:
+
+```dosini
+MONGODB_URI=mongodb connection string
+```
+
+`process.env` now has the keys and values you defined in your `.env` file.
+
+---
+
+
+## How to Build and Run the project
+
+1. Install NPM packages
+
+```sh
+
+cd Client_Side && npm install
+
+```
+
+2. Build React production app
+
+```sh
+
+cd Client_Side && npm run build
+
+```
+
+3. Run Server
+
+```sh
+
+node server.js
+
+```
+
+4. Run React App
+
+```sh
+
+cd Client_Side && npm start
+
+```
+
+---
