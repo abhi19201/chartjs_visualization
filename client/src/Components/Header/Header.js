@@ -4,7 +4,7 @@ import "./Header.css";
 export default function Header() {
     return (
         <div className='item-1'>
-            Greendeck Header
+            Greendeck : Time Series Visualisation
             {/* <FileUploadButton/> */}
         </div>
     );
