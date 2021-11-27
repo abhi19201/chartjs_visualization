@@ -1,0 +1,11 @@
+.item-4 {
+    grid-area: footer;
+    font-size: 1.5rem;
+    box-shadow: 10px 0px 10px 4px #1a1a1a;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    color: #9a9a9a;
+    font-family: monospace;
+}
+

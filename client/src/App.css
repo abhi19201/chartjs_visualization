@@ -1,0 +1,15 @@
+.App {
+    display: grid;
+    grid-template-areas:
+        "header header header header header header"
+        "sidebar chart chart chart chart chart"
+        "sidebar chart chart chart chart chart"
+        "footer footer footer footer footer footer";
+    background-color: #222528;
+    min-height: 100vh;
+}
+
+
+
+
+
