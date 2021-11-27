@@ -37,7 +37,7 @@ MONGODB_URI=mongodb connection string
 
 ```sh
 
-cd Client_Side && npm install
+cd client && npm install
 
 ```
 
@@ -45,7 +45,7 @@ cd Client_Side && npm install
 
 ```sh
 
-cd Client_Side && npm run build
+cd client && npm run build
 
 ```
 
@@ -61,7 +61,7 @@ node server.js
 
 ```sh
 
-cd Client_Side && npm start
+cd client && npm start
 
 ```
 
