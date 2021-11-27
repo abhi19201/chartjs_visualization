@@ -18,7 +18,7 @@ export const getMetrics =
     async (dispatch) => {
         try {
             dispatch({ type: METRICS_REQUEST });
-            let link = `http://localhost:8000/api/metrics?measure=${measure}&page=${currentPage}`;
+            let link = `/api/metrics?measure=${measure}&page=${currentPage}`;
 
             const { data } = await Axios.get(link);
             dispatch({
@@ -39,7 +39,7 @@ export const getMetrics =
 export const getMeasures = () => async (dispatch) => {
     try {
         dispatch({ type: MEASURES_REQUEST });
-        let link = `http://localhost:8000/api/metrics/measures`;
+        let link = `/api/metrics/measures`;
 
         const {data} = await Axios.get(link);
 
