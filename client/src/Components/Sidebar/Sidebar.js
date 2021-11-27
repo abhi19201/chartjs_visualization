@@ -31,9 +31,7 @@ export default function Sidebar() {
                 }}>
                 <div>All</div>
             </button>
-            {loading && measures.length !== 0 ? (
-                <Loader />
-            ) : (
+            {loading && measures.length === 0 ? (
                 measures.map((measure, index) => {
                     return (
                         <SidebarItems
@@ -43,6 +41,8 @@ export default function Sidebar() {
                         />
                     );
                 })
+            ): (
+                <Loader />
             )}
         </div>
     );
