@@ -21,21 +21,6 @@ export default function Sidebar() {
         dispatch(changePage(1));
     };
 
-    function MeasureButtons(){
-        if (!loading && measures !== undefined) {
-            measures.map((measure, index) => {
-                return (
-                    <SidebarItems
-                        measure={measure}
-                        key={index}
-                        onClick={measureClickHandler}
-                    />
-                );
-            });
-        } else {
-            return <Loader />;
-        }
-    };
 
     return (
         <div className='item-2 barItems'>
@@ -46,7 +31,19 @@ export default function Sidebar() {
                 }}>
                 <div>All</div>
             </button>
-            {MeasureButtons()}
+            {loading && measures.length !== 0 ? (
+                <Loader />
+            ) : (
+                measures.map((measure, index) => {
+                    return (
+                        <SidebarItems
+                            measure={measure}
+                            key={index}
+                            onClick={measureClickHandler}
+                        />
+                    );
+                })
+            )}
         </div>
     );
 }
