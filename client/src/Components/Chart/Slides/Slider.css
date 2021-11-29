@@ -1,0 +1,63 @@
+.slideButton {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+
+.slideButton .prev {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 3vw;
+    color: #cfcfcf;
+    font-family: monospace;
+    cursor: pointer;
+    user-select: none;
+}
+
+.slideButton .next {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 3vw;
+    color: #cfcfcf;
+    font-family: monospace;
+    cursor: pointer;
+    user-select: none;
+}
+
+.next > img {
+    position: relative;
+    height: 3rem;
+    left: 1rem;
+}
+
+.prev > img {
+    position: relative;
+    height: 3rem;
+    right: 1rem;
+}
+
+.image {
+    position: absolute;
+    width: 700px;
+    height: 300px;
+}
+
+.metricNum {
+    height: 7vh;
+    color: white;
+    font-size: 3vw;
+    font-family: sans-serif;
+    line-height: 7vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+}
+
+.disable {
+    opacity: 0;
+    cursor: default !important;
+}

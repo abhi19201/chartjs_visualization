@@ -4,59 +4,8 @@
     flex-direction: column;
     align-self: center;
     justify-content: center;
-    height: 80vh;
-    width: 75vw;
+    margin-top: 2rem;
 }
-
-
-.slideButton {
-    display: flex;
-    position: relative;
-    top: 1rem;
-    justify-content: space-evenly;
-}
-
-.slideButton .prev {
-    position: relative;
-    display: flex;
-    align-items: center;
-    font-size: 3vw;
-    color: #cfcfcf;
-    font-family: monospace;
-    cursor: pointer;
-    user-select: none;
-}
-
-.slideButton .next {
-    position: relative;
-    display: flex;
-    align-items: center;
-    font-size: 3vw;
-    color: #cfcfcf;
-    font-family: monospace;
-    cursor: pointer;
-    user-select: none;
-}
-
-
-.next > img {
-    position: relative;
-    height: 3rem;
-    left: 1rem;
-}
-
-.prev > img {
-    position: relative;
-    height: 3rem;
-    right: 1rem;
-}
-
-.image {
-    position: absolute;
-    width: 700px;
-    height: 300px;
-}
-
 
 .card {
     padding: 1rem;
@@ -69,25 +18,5 @@
     border-radius: 0.5rem;
     margin-bottom: 0;
 }
-
-.metricNum {
-    height: 7vh;
-    color: white;
-    font-size: 3vw;
-    font-family: sans-serif;
-    line-height: 7vh;
-    display: flex;
-    position: relative;
-    overflow: hidden;
-    user-select: none;
-}
-
-
-
-.disable {
-    opacity: 0;
-    cursor: default !important;
-}
-
 
 

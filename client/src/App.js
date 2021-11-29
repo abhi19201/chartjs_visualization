@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { getMeasures } from "./Actions/apiCall";
 import ChartLayout from "./Components/Chart/ChartLayout";
@@ -13,7 +13,6 @@ function App() {
     useEffect(() => {
         dispatch(getMeasures());
     }, [dispatch]);
-
 
     return (
         <div className='App'>

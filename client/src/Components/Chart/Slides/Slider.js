@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import Chart from "../Chart/Chart";
 import NextButton from "./NextButton";
 import PrevButton from "./PrevButton";
-import "../ChartLayout.css";
+import "./Slider.css";
 
 //Chart SlideShow
 export default function Slider(props) {

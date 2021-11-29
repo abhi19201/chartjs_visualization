@@ -11,7 +11,6 @@ import {
     MEASURES_REQUEST_FAIL,
 } from "../Constants/constants";
 
-
 //get Metrics
 export const getMetrics =
     (measure = "", currentPage = 1) =>
@@ -34,14 +33,13 @@ export const getMetrics =
         }
     };
 
-
 //get list of Measures
 export const getMeasures = () => async (dispatch) => {
     try {
         dispatch({ type: MEASURES_REQUEST });
         let link = `/api/metrics/measures`;
 
-        const {data} = await Axios.get(link);
+        const { data } = await Axios.get(link);
 
         dispatch({
             type: MEASURES_REQUEST_SUCCESS,
@@ -55,7 +53,6 @@ export const getMeasures = () => async (dispatch) => {
     }
 };
 
-
 //Change Page Number
 export const changePage = (currentPage = 1) => {
     return {
@@ -63,7 +60,6 @@ export const changePage = (currentPage = 1) => {
         payload: currentPage,
     };
 };
-
 
 //Store Metrics
 export const storeMetrics = (metrics = [], page = 1) => {

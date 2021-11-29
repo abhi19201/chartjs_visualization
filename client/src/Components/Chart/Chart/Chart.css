@@ -1,3 +1,7 @@
+.layout {
+    display: flex;
+}
+
 .chart {
     padding: 1rem;
     display: flex;
@@ -5,7 +9,9 @@
     background: antiquewhite;
     justify-content: center;
     top: 0;
-    width: 45vw;
+    width: -webkit-fill-available;
+    margin: 1rem;
+    /* width: 45vw; */
 }
 
 .chart > div {
@@ -13,10 +19,24 @@
 }
 
 .dimension {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
-    width: 28vw;
-    right: 0;
+    /* width: 28vw;
+    right: 0; */
 }
 
+@media screen and (max-width: 768px) {
+
+    .layout{
+        flex-direction: column;
+    }
+
+    .dimension {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

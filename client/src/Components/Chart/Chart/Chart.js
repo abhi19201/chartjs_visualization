@@ -53,21 +53,25 @@ export default function TSChart(props) {
     }, [chartRef, props.data]);
 
     return (
-        <div className='chart'>
-            <h1>
-                {props.data
-                    ? `${props.data.measure
-                          .toUpperCase()
-                          .split("_")
-                          .join(" ")} :`
-                    : null}
-            </h1>
-            <canvas id='mycanvas' ref={chartRef} />
+        <div className='layout' >
+            <div className='chart'>
+                <h1>
+                    {props.data
+                        ? `${props.data.measure
+                              .toUpperCase()
+                              .split("_")
+                              .join(" ")} :`
+                        : null}
+                </h1>
+                <canvas id='mycanvas' ref={chartRef} />
+            </div>
 
             <div className='dimension'>
                 {props.data
                     ? props.data.dimensions.map((dimension) => {
-                          return <Card dimension={dimension} key={Math.random()} />;
+                          return (
+                              <Card dimension={dimension} key={Math.random()} />
+                          );
                       })
                     : null}
             </div>
