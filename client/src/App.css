@@ -9,7 +9,12 @@
     min-height: 100vh;
 }
 
-
-
-
-
+@media screen and (max-width: 500px) {
+    .App {
+        grid-template-areas:
+            "header header header header header header"
+            "sidebar sidebar sidebar sidebar sidebar sidebar"
+            "chart chart chart chart chart chart"
+            "footer footer footer footer footer footer";
+    }
+}

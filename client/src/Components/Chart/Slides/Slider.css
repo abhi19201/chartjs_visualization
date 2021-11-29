@@ -3,15 +3,15 @@
     position: relative;
     justify-content: space-evenly;
     margin: 1rem;
+    font-size: 3vw;
+    font-family: monospace;
 }
 
 .slideButton .prev {
     position: relative;
     display: flex;
     align-items: center;
-    font-size: 3vw;
     color: #cfcfcf;
-    font-family: monospace;
     cursor: pointer;
     user-select: none;
 }
@@ -20,9 +20,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    font-size: 3vw;
     color: #cfcfcf;
-    font-family: monospace;
     cursor: pointer;
     user-select: none;
 }
@@ -48,8 +46,6 @@
 .metricNum {
     height: 7vh;
     color: white;
-    font-size: 3vw;
-    font-family: sans-serif;
     line-height: 7vh;
     display: flex;
     position: relative;
@@ -60,4 +56,13 @@
 .disable {
     opacity: 0;
     cursor: default !important;
+}
+
+
+/* media-query for mobiles */
+@media screen and (max-width: 500px) {
+    .slideButton{
+        font-size: 5vw;
+    }
+
 }

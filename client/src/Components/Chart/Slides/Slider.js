@@ -11,12 +11,12 @@ export default function Slider(props) {
     const { storedMetrics } = useSelector((state) => state.storedMetrics);
 
     return (
-        <div>
-            <div>
+        <React.Fragment>
+            <React.Fragment>
                 {props.metrics ? (
                     <Chart data={storedMetrics[props.CurrentIndex - 1]} />
                 ) : null}
-            </div>
+            </React.Fragment>
 
             {props.numOfFilteredMetrics ?
                 <div className='slideButton'>
@@ -33,6 +33,6 @@ export default function Slider(props) {
                 </div>
                 : null
             }
-        </div>
+        </React.Fragment>
     );
 }

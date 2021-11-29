@@ -26,6 +26,8 @@
     right: 0; */
 }
 
+
+/* media-query for tablets */
 @media screen and (max-width: 768px) {
 
     .layout{
@@ -40,3 +42,5 @@
         justify-content: center;
     }
 }
+
+

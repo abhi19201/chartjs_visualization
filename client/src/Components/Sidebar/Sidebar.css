@@ -4,9 +4,6 @@
     display: flex;
     justify-self: center;
     margin-right: 1rem;
-}
-
-.barItems {
     display: flex;
     flex-direction: column;
     margin: 1rem;
@@ -33,7 +30,7 @@ button {
 
 button::after {
     content: "";
-    background-color:#15151536;
+    background-color: #15151536;
     width: 100%;
     z-index: -1;
     position: absolute;
@@ -42,7 +39,7 @@ button::after {
     left: 7px;
     transition: 0.4s;
     border-radius: 0.5rem;
-    box-shadow: 0px 6px 5px #1a1a1a
+    box-shadow: 0px 6px 5px #1a1a1a;
 }
 
 button:hover::after {
@@ -60,16 +57,31 @@ button:hover:active {
     box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.35);
 }
 
-button > div{
-    color:#cfcfcf;
+button > div {
+    color: #cfcfcf;
     top: 7px;
     left: 7px;
     position: relative;
     transition: 0.4s;
 }
 
-
-button:hover > div{
+button:hover > div {
     top: 0px;
     left: 0px;
+}
+
+
+/* media-query for mobiles */
+@media screen and (max-width: 500px) {
+    .item-2 {
+        width: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 1rem;
+    }
+
+    button {
+        margin: 1rem;
+        font-size: 3vw;
+    }
 }

@@ -10,13 +10,32 @@
 .card {
     padding: 1rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border: 1px solid;
     margin: 1.5rem;
     font-size: 1.8vw;
     color: white;
     border-radius: 0.5rem;
     margin-bottom: 0;
+    width: 15vw;
+    align-items: center;
 }
 
 
+/* media-query for tablets */
+@media screen and (max-width: 768px) {
+    .card{
+        width: auto;
+        font-size: 3vw;
+    }
+}
+
+
+
+/* media-query for mobiles */
+@media screen and (max-width: 500px) {
+    .item-3 {
+        margin-top: 0;
+    }
+
+}

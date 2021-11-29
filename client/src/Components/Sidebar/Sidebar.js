@@ -23,7 +23,7 @@ export default function Sidebar() {
 
 
     return (
-        <div className='item-2 barItems'>
+        <div className='item-2'>
             <button
                 onClick={() => {
                     measureClickHandler("", 1);
