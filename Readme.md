@@ -1,4 +1,4 @@
-# Greendeck : Time Series Visualisation
+# Chartjs Time Series Visualisation
 
 ![Mongo](https://img.shields.io/badge/DB-MongoDB-yellow)
 ![React](https://aleen42.github.io/badges/src/react.svg)
@@ -7,7 +7,7 @@
 ![node](https://aleen42.github.io/badges/src/node.svg)
 
 
-Website Link : [Greendeck: Time Series Visualisation](https://chartjs-visualization.herokuapp.com/)
+Website Link : [Chartjs Time Series Visualisation](https://chartjs-visualization.herokuapp.com/)
 
 
 ## Environmental Variables
