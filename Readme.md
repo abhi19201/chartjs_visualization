@@ -7,7 +7,7 @@
 ![node](https://aleen42.github.io/badges/src/node.svg)
 
 
-Website Link : [Greendeck: Time Series Visualisation](https://greendeck-cliffai.herokuapp.com/)
+Website Link : [Greendeck: Time Series Visualisation](https://chartjs-visualization.herokuapp.com/)
 
 
 ## Environmental Variables
