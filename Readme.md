@@ -23,7 +23,7 @@ environment-specific variables on new lines in the form of `KEY=VALUE`.
 We need these environment variables:
 
 ```dosini
-MONGODB_URI="mongodb+srv://Abhijeet:Abhi1234@greendeck.9oo93.mongodb.net/metrics?retryWrites=true&w=majority"
+MONGODB_URI=uri
 
 PORT=8000
 ```
